@@ -35,9 +35,10 @@ public class ListaCircular {
         return lista.raiz == null;
     }
 
-    public void contar() {
+    public int contar() {
 
         Nodo actual;
+        int cantidad = 0;
 
         if (raiz != null) {
 
@@ -49,13 +50,17 @@ public class ListaCircular {
                 System.out.println("Cantidad: " + actual.getBolsa().getCantidad());
                 System.out.println("*************************************************");
                 
-                actual = actual.getSiguiente();                                      
+                actual = actual.getSiguiente();   
+                
+                cantidad++;
                 
             } while (actual != raiz.getSiguiente());
 
         } else {
             System.out.println("Lista circular vacía");
         }
+        
+        return cantidad;
     }
 
 }
