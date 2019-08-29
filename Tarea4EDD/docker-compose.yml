@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  tarea4edd:
+    image: tarea4edd
+    build: .
+    ports:
+      - 3000:3000

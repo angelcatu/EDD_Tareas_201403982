@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  tarea4edd:
+    image: tarea4edd
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
